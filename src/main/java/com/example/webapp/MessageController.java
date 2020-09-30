@@ -27,6 +27,12 @@ public class MessageController {
     public String sayBye() {
         return "bye";
     }
+    
+    @ResponseBody
+    @RequestMapping(value = "/venky", method = RequestMethod.GET)
+    public String sayBye() {
+        return "venky";
+    }
 
     @ResponseBody
     @RequestMapping(value = "/how_are_you", method = RequestMethod.GET)
