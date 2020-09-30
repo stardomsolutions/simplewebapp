@@ -30,7 +30,7 @@ public class MessageController {
     
     @ResponseBody
     @RequestMapping(value = "/venky", method = RequestMethod.GET)
-    public String sayBye() {
+    public String sayVenky() {
         return "venky";
     }
 
