@@ -19,7 +19,7 @@ public class MessageController {
     @ResponseBody
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String sayHello() {
-        return "helloworld";
+        return "hello";
 	}
 
     @ResponseBody
