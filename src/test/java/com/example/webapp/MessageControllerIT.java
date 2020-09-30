@@ -7,7 +7,7 @@ public class MessageControllerIT {
 
     @Test()
     public void testSayHello() throws Exception {
-        assertEquals(HTTPRequestTestHelper.getResponse("http://localhost:8080/say/hello"), "hello");
+        assertEquals(HTTPRequestTestHelper.getResponse("http://localhost:8080/say/helloworld"), "helloworld");
     }
 
     @Test()

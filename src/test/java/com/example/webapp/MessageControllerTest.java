@@ -9,7 +9,7 @@ public class MessageControllerTest {
 
     @Test
     public void testSayHello() {
-        assertEquals(messageController.sayHello(), "hello");
+        assertEquals(messageController.sayHello(), "helloworld");
     }
 
     @Test
