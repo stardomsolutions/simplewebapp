@@ -14,7 +14,12 @@
         <sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.jacoco.itReportPath>target/jacoco-it.exec</sonar.jacoco.itReportPath>
     </properties>
-
+	<distributionManagement>
+	   <snapshotRepository>
+	      <id>nexus-snapshots</id>
+	      <url>http://192.168.56.102:8082/repository/maven-snapshots/</url>
+	   </snapshotRepository>
+	</distributionManagement>
     <profiles>
         <profile>
             <id>run-its</id>
@@ -68,6 +73,19 @@
                             </execution>
                         </executions>
                     </plugin>
+					<plugin>
+					   <artifactId>maven-deploy-plugin</artifactId>
+					   <version>2.8.1</version>
+					   <executions>
+					      <execution>
+					         <id>default-deploy</id>
+					         <phase>deploy</phase>
+					         <goals>
+					            <goal>deploy</goal>
+					         </goals>
+					      </execution>
+					   </executions>
+					</plugin>
                 </plugins>
             </build>
         </profile>
