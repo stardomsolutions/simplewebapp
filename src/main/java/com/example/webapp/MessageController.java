@@ -31,7 +31,7 @@ public class MessageController {
     @ResponseBody
     @RequestMapping(value = "/venky", method = RequestMethod.GET)
     public String sayVenky() {
-        return "venky";
+        return "my name is venky";
     }
 
     @ResponseBody
