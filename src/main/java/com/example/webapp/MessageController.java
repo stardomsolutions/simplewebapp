@@ -24,7 +24,7 @@ public class MessageController {
 
     @ResponseBody
     @RequestMapping(value = "/bye", method = RequestMethod.GET)
-    public String sayHello() {
+    public String sayBye() {
         return "bye";
     }
     
