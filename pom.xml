@@ -14,6 +14,12 @@
         <sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.jacoco.itReportPath>target/jacoco-it.exec</sonar.jacoco.itReportPath>
     </properties>
+	<distributionManagement>
+	    <repository>
+	         <id>nexus3</id>
+	         <url>http://192.168.56.102:8081/repository/maven-public/</url>
+	    </repository>
+	</distributionManagement>
 	<repositories>
 	    <repository>
 	         <id>nexus3</id>
